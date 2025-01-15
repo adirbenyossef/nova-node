@@ -1,0 +1,27 @@
+{
+  "name": "@nova-node/spark",
+  "version": "1.0.0-alpha.1",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adirbenyossef/nova-node.git"
+},
+  "scripts": {
+    "test": "vitest",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": [
+    "monitoring",
+    "metrics",
+    "performance",
+    "diagnostics"
+  ],
+  "author": "Adir Ben Yosef",
+  "dependencies": {
+    "@nova-node/core": "workspace:*"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@nova-node/core",
+  "version": "1.0.0-alpha.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adirbenyossef/nova-node.git"
+},
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "lint": "eslint src/**/*.ts",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "rimraf": "^5.0.0"
+  }
+}

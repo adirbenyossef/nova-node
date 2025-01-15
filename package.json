@@ -1,0 +1,27 @@
+{
+  "name": "nova-node",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "clean": "pnpm -r clean",
+    "publish-packages": "pnpm publish -r --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adirbenyossef/nova-node.git"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.19.1",
+    "@typescript-eslint/parser": "^8.19.1",
+    "eslint": "^9.17.0",
+    "typescript": "^5.7.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "latest": "^0.2.0"
+  }
+}

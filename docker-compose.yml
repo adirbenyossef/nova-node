@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  spark:
+    build: ./packages/spark
+    ports:
+      - "3000:3000"
+  core:
+    build: ./packages/core
+  # Add other services similarly
