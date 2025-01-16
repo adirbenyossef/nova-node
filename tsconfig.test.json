@@ -6,6 +6,6 @@
       "module": "ESNext",
       "target": "ESNext",
       "moduleResolution": "Bundler",
-      "types": ["vitest/globals"],
+      "types": ["vitest/globals"]
     }
   }
