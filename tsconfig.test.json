@@ -6,8 +6,6 @@
       "module": "ESNext",
       "target": "ESNext",
       "moduleResolution": "Bundler",
-  
-      // Include test-specific types.
       "types": ["vitest/globals"],
     },
   }
