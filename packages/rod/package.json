@@ -3,10 +3,6 @@
   "version": "1.0.0-alpha.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/adirbenyossef/nova-node.git"
-},
   "bin": {
     "nova": "./dist/cli.js"
   },
@@ -15,6 +11,23 @@
     "test": "vitest",
     "lint": "eslint src/**/*.ts",
     "clean": "rimraf dist"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "@nova-node/source": "./src/index.ts",
+        "types": "./build/index.d.mts",
+        "import": "./build/index.mjs",
+        "default": "./build/index.mjs"
+      },
+      "require": {
+        "@nova-node/source": "./src/index.ts",
+        "types": "./build/index.d.ts",
+        "import": "./build/index.js",
+        "default": "./build/index.js"
+      }
+    },
+    "./package.json": "./package.json"
   },
   "dependencies": {
     "@nova-node/core": "workspace:*",
