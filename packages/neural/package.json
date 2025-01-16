@@ -1,35 +1,35 @@
 {
-  "name": "@nova-node/neural",
-  "version": "1.0.0-alpha.1",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "test": "vitest",
-    "lint": "eslint src/**/*.ts",
-    "clean": "rimraf dist"
-  },
-  "exports": {
-    ".": {
-      "import": {
-        "@nova-node/source": "./src/index.ts",
-        "types": "./build/index.d.mts",
-        "import": "./build/index.mjs",
-        "default": "./build/index.mjs"
-      },
-      "require": {
-        "@nova-node/source": "./src/index.ts",
-        "types": "./build/index.d.ts",
-        "import": "./build/index.js",
-        "default": "./build/index.js"
-      }
-    },
-    "./package.json": "./package.json"
-  },
-  "dependencies": {
-    "@nova-node/core": "workspace:*"
-  },
-  "devDependencies": {
-    "rimraf": "^5.0.0"
-  }
+	"name": "@nova-node/neural",
+	"version": "1.0.0-alpha.1",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"test": "vitest",
+		"lint": "eslint src/**/*.ts",
+		"clean": "rimraf dist"
+	},
+	"exports": {
+		".": {
+			"import": {
+				"@nova-node/source": "./src/index.ts",
+				"types": "./build/index.d.mts",
+				"import": "./build/index.mjs",
+				"default": "./build/index.mjs"
+			},
+			"require": {
+				"@nova-node/source": "./src/index.ts",
+				"types": "./build/index.d.ts",
+				"import": "./build/index.js",
+				"default": "./build/index.js"
+			}
+		},
+		"./package.json": "./package.json"
+	},
+	"dependencies": {
+		"@nova-node/core": "workspace:*"
+	},
+	"devDependencies": {
+		"rimraf": "^5.0.0"
+	}
 }

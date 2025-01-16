@@ -1,1 +1,1 @@
-export const t = () => console.log('hello from glass');
+export const t = () => console.log("hello from glass");

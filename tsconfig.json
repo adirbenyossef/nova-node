@@ -1,24 +1,24 @@
 {
-  "extends": "./tsconfig.options.json",
-  "files": [],
-  "references": [
-    {
-      "path": "packages/core"
-    },
-    {
-      "path": "packages/glass"
-    },
-    {
-      "path": "packages/neural"
-    },
-    {
-      "path": "packages/rod"
-    },
-    {
-      "path": "packages/spark"
-    },
-    {
-      "path": "packages/stream"
-    }
-  ]
+	"extends": "./tsconfig.options.json",
+	"files": [],
+	"references": [
+		{
+			"path": "packages/core"
+		},
+		{
+			"path": "packages/glass"
+		},
+		{
+			"path": "packages/neural"
+		},
+		{
+			"path": "packages/rod"
+		},
+		{
+			"path": "packages/spark"
+		},
+		{
+			"path": "packages/stream"
+		}
+	]
 }

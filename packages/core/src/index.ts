@@ -1,1 +1,1 @@
-export const t = () => console.log('hello from core');
+export const t = () => console.log("hello from core");

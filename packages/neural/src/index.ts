@@ -1,1 +1,1 @@
-export const t = () => console.log('hello from neural');
+export const t = () => console.log("hello from neural");
