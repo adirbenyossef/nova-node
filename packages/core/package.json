@@ -1,35 +1,35 @@
 {
-	"name": "@nova-node/core",
-	"version": "1.0.0-alpha.1",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
-	"author": {
-		"name": "Adir Ben Yosef",
-		"email": "adirbenyossef@gmail.com"
-	},
-	"scripts": {
-		"clean": "rimraf build .turbo",
-		"test:unit": "vitest --workspace ../../vitest.workspace.ts --project unit run"
-	},
-	"exports": {
-		".": {
-			"import": {
-				"@nova-node/source": "./src/index.ts",
-				"types": "./build/index.d.mts",
-				"import": "./build/index.mjs",
-				"default": "./build/index.mjs"
-			},
-			"require": {
-				"@nova-node/source": "./src/index.ts",
-				"types": "./build/index.d.ts",
-				"import": "./build/index.js",
-				"default": "./build/index.js"
-			}
-		},
-		"./package.json": "./package.json"
-	},
-	"dependencies": {},
-	"devDependencies": {
-		"rimraf": "^5.0.0"
-	}
+  "name": "@nova-node/core",
+  "version": "1.0.0-alpha.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": {
+    "name": "Adir Ben Yosef",
+    "email": "adirbenyossef@gmail.com"
+  },
+  "scripts": {
+    "clean": "rimraf build .turbo",
+    "test:unit": "vitest --workspace ../../vitest.workspace.ts --project unit run"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "@nova-node/source": "./src/index.ts",
+        "types": "./build/index.d.mts",
+        "import": "./build/index.mjs",
+        "default": "./build/index.mjs"
+      },
+      "require": {
+        "@nova-node/source": "./src/index.ts",
+        "types": "./build/index.d.ts",
+        "import": "./build/index.js",
+        "default": "./build/index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "rimraf": "^5.0.0"
+  }
 }

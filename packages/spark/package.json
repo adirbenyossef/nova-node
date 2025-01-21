@@ -1,31 +1,31 @@
 {
-	"name": "@nova-node/spark",
-	"version": "1.0.0-alpha.1",
-	"main": "./src/index.ts",
-	"scripts": {
-		"clean": "rimraf build .turbo",
-		"test:unit": "vitest --workspace ../../vitest.workspace.ts --project unit run"
-	},
-	"keywords": ["monitoring", "metrics", "performance", "diagnostics"],
-	"author": "Adir Ben Yosef",
-	"exports": {
-		".": {
-			"import": {
-				"@nova-node/source": "./src/index.ts",
-				"types": "./build/index.d.mts",
-				"import": "./build/index.mjs",
-				"default": "./build/index.mjs"
-			},
-			"require": {
-				"@nova-node/source": "./src/index.ts",
-				"types": "./build/index.d.ts",
-				"import": "./build/index.js",
-				"default": "./build/index.js"
-			}
-		},
-		"./package.json": "./package.json"
-	},
-	"dependencies": {
-		"@nova-node/core": "workspace:*"
-	}
+  "name": "@nova-node/spark",
+  "version": "1.0.0-alpha.1",
+  "main": "./src/index.ts",
+  "scripts": {
+    "clean": "rimraf build .turbo",
+    "test:unit": "vitest --workspace ../../vitest.workspace.ts --project unit run"
+  },
+  "keywords": ["monitoring", "metrics", "performance", "diagnostics"],
+  "author": "Adir Ben Yosef",
+  "exports": {
+    ".": {
+      "import": {
+        "@nova-node/source": "./src/index.ts",
+        "types": "./build/index.d.mts",
+        "import": "./build/index.mjs",
+        "default": "./build/index.mjs"
+      },
+      "require": {
+        "@nova-node/source": "./src/index.ts",
+        "types": "./build/index.d.ts",
+        "import": "./build/index.js",
+        "default": "./build/index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@nova-node/core": "workspace:*"
+  }
 }

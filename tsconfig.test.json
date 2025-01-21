@@ -1,11 +1,11 @@
 {
-	"extends": "./tsconfig.json",
-	"compilerOptions": {
-		"composite": true,
-		"lib": ["ESNext"],
-		"module": "ESNext",
-		"target": "ESNext",
-		"moduleResolution": "Bundler",
-		"types": ["vitest/globals"]
-	}
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Bundler",
+    "types": ["vitest/globals"],
+  },
 }

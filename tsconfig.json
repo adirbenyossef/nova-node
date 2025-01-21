@@ -1,24 +1,35 @@
 {
-	"extends": "./tsconfig.options.json",
-	"files": [],
-	"references": [
-		{
-			"path": "packages/core"
-		},
-		{
-			"path": "packages/glass"
-		},
-		{
-			"path": "packages/neural"
-		},
-		{
-			"path": "packages/rod"
-		},
-		{
-			"path": "packages/spark"
-		},
-		{
-			"path": "packages/stream"
-		}
-	]
+  "extends": "./tsconfig.options.json",
+  "files": [],
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "explainFiles": true,
+    "emitDeclarationOnly": true,
+    "allowJs": true,
+    "declaration": true,
+    "declarationDir": "types",
+    "declarationMap": true
+  },
+  "references": [
+    {
+      "path": "packages/core"
+    },
+    {
+      "path": "packages/glass"
+    },
+    {
+      "path": "packages/neural"
+    },
+    {
+      "path": "packages/rod"
+    },
+    {
+      "path": "packages/spark"
+    },
+    {
+      "path": "packages/stream"
+    }
+  ]
 }
