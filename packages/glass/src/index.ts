@@ -1,4 +1,4 @@
-export const t = (): string => {
+export function t(): string {
   console.log('hello from glass')
-  return 'core'
+  return 'glass'
 }
