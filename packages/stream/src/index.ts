@@ -1,1 +1,4 @@
-export const t = (): void => console.log('hello from stream')
+export const t = (): string => {
+  console.log('hello from stream')
+  return 'stream'
+}

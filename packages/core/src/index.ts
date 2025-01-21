@@ -1,1 +1,4 @@
-export const t = (): void => console.log('hello from core')
+export const t = (): string => {
+  console.log('hello from core')
+  return 'core'
+}
