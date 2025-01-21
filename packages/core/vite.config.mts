@@ -1,0 +1,29 @@
+import { defineConfig } from 'vitest/config';
+
+export default defineConfig({
+  test: {
+    name: 'unit',
+      include:  ['./**/*.test.ts'],
+      environment: 'node',
+      globals: true      
+  }
+});
+
+// {
+//     // extends: './vite.config.ts',
+//     test: {
+//       name: 'unit',
+//       include:  ['./packages/**/*.test.ts'],
+//       environment: 'node',
+//       globals: true      
+//     },
+//   },
+//   {
+//     // extends: './vite.config.ts',
+//     test: {
+//       name: 'integration',
+//       include: ['integration/**/*.test.ts'],
+//       environment: 'node',
+//       globals: true,
+//     },
+//   },
