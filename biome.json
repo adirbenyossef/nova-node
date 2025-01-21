@@ -1,6 +1,22 @@
 {
-    "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-    "files": {
-        "ignoreUnknown": true
-      }
-  }
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"nursery": {
+				"recommended": true
+			}
+		}
+	},
+	"javascript": {
+		"parser": {
+			"unsafeParameterDecoratorsEnabled": true
+		}
+	},
+	"json": {
+		"parser": {
+			"allowComments": true,
+			"allowTrailingCommas": true
+		}
+	}
+}
